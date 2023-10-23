@@ -160,3 +160,31 @@ tr {
     margin: 0;
     font-size: xx-small;
 }
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.hover-image {
+    max-width: 400px;
+    /* Adjust as needed */
+    height: auto;
+    margin: 0 10px;
+    /* Adjust as needed */
+}
