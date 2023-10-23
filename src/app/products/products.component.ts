@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit{
+  ngOnInit(){
+    this.changeCategory()
+  }
 
   cementProducts = [
     {
@@ -84,8 +87,6 @@ export class ProductsComponent {
   selectedCategory: string = 'all'; // Default to 'All Categories'
   productsToDisplay: any[] = [];
   changeCategory() {
-console.log(this.selectedCategory)
-
     if (this.selectedCategory === 'all') {
       this.productsToDisplay = [
         ...this.cementProducts,
