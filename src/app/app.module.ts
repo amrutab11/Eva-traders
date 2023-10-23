@@ -12,13 +12,15 @@ import { MatTabsModule } from '@angular/material/tabs'; // Import the MatTabsMod
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

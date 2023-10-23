@@ -1,0 +1,15 @@
+<mat-radio-group aria-label="Select an option" [(ngModel)]="selectedCategory" (change)="changeCategory()">
+    <mat-radio-button value="all">ALL</mat-radio-button>
+    <mat-radio-button value="cement">CEMENT</mat-radio-button>
+    <mat-radio-button value="steel">STEEL</mat-radio-button>
+    <mat-radio-button value="aac">AAC BLOCK</mat-radio-button>
+</mat-radio-group>
+
+<div class="product-list">
+    <div *ngFor="let product of productsToDisplay" class="product">
+        <img [src]="'assets/images/' + product.image" alt="{{ product.name }}" />
+        <h3>{{ product.name }}</h3>
+        <p>Category: {{ product.category }}</p>
+        <p>Price: RS.{{ product.price }}</p>
+    </div>
+</div>
