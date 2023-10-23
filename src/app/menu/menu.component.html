@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <div class="navbar">
+        <img src="assets/images/Logo-preview.png" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a routerLink="/home" routerLinkActive="active">Home</a>
+            <a routerLink="/products" routerLinkActive="active">Products</a>
+            <a routerLink="/about" routerLinkActive="active">About Us</a>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <select class="form-control mr-sm-2" aria-label="Search" [(ngModel)]="searchOption">
+                <option value="cement">CEMENT</option>
+                <option value="steel">STEEL</option>
+                <option value="aac">AAC</option>
+            </select>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search()">Search</button>
+        </form>
+
+    </div>
+
+    <!-- Your content goes here -->
+    <div class="middle-container">
+        <!-- Your tab content here -->
+    </div>
+
+</body>
+
+</html>
