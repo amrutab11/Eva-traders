@@ -10,12 +10,38 @@
     justify-content: space-between;
     align-items: center;
     min-height: 2vh;
+    line-height: 0.5;
     /* Set a minimum height of 5% of the viewport height */
 }
 
-.footer h3,
-.footer h4,
-.footer p {
-    margin: 0;
-    font-size: xx-small;
+.footer h5,
+.footer h6 {
+    text-align: center;
+}
+
+.contact-details {
+    text-align: left;
+    display: flex;
+    align-items: unset;
+}
+
+/* .contact-details {
+    display: flex;
+} */
+
+.footer p:last-child {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: inherit;
+}
+
+.footer p:last-child a {
+    margin-left: 10px;
+    /* Adjust as needed */
+}
+
+.material-icons {
+    font-size: 20px;
 }
